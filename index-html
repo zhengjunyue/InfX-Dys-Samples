@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Case Samples + Influenced Samples</title>
+  <style>
+    :root { --bg:#0b0f14; --card:#111824; --text:#e8eef7; --muted:#a9b6c7; --line:#223047; }
+    body { margin:0; font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif; background:var(--bg); color:var(--text); }
+    .wrap { max-width: 980px; margin: 0 auto; padding: 28px 18px 60px; }
+    h1 { font-size: 22px; margin: 0 0 8px; }
+    p { margin: 6px 0 18px; color: var(--muted); }
+    .case { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 16px; margin: 14px 0; }
+    .case h2 { font-size: 18px; margin: 0 0 10px; }
+    .row { display:flex; gap:12px; flex-wrap:wrap; align-items:center; margin:10px 0; padding:10px; border:1px solid var(--line); border-radius:12px; }
+    .label { min-width: 220px; color: var(--muted); }
+    audio { width: min(520px, 100%); }
+    a { color:#8cc7ff; text-decoration:none; }
+    a:hover { text-decoration: underline; }
+    details { margin-top: 10px; }
+    summary { cursor:pointer; color: var(--text); }
+    .small { font-size: 13px; color: var(--muted); }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>Case samples with highest/lowest influenced samples</h1>
+    <p>Two cases shown below. Each case includes the query audio plus the top-5 and bottom-5 influenced samples.</p>
+
+    <!-- ========================= CASE 1 ========================= -->
+    <section class="case">
+      <h2>Case 1</h2>
+
+      <div class="row">
+        <div class="label">Case sample</div>
+        <audio controls preload="none" src="assets/case1/case.wav"></audio>
+        <div class="small"><a href="assets/case1/case.wav">open</a></div>
+      </div>
+
+      <details open>
+        <summary>Highest-5 influenced samples</summary>
+
+        <div class="row"><div class="label">Top 1</div><audio controls preload="none" src="assets/case1/top/top1.wav"></audio><div class="small"><a href="assets/case1/top/top1.wav">open</a></div></div>
+        <div class="row"><div class="label">Top 2</div><audio controls preload="none" src="assets/case1/top/top2.wav"></audio><div class="small"><a href="assets/case1/top/top2.wav">open</a></div></div>
+        <div class="row"><div class="label">Top 3</div><audio controls preload="none" src="assets/case1/top/top3.wav"></audio><div class="small"><a href="assets/case1/top/top3.wav">open</a></div></div>
+        <div class="row"><div class="label">Top 4</div><audio controls preload="none" src="assets/case1/top/top4.wav"></audio><div class="small"><a href="assets/case1/top/top4.wav">open</a></div></div>
+        <div class="row"><div class="label">Top 5</div><audio controls preload="none" src="assets/case1/top/top5.wav"></audio><div class="small"><a href="assets/case1/top/top5.wav">open</a></div></div>
+      </details>
+
+      <details>
+        <summary>Lowest-5 influenced samples</summary>
+
+        <div class="row"><div class="label">Bottom 1</div><audio controls preload="none" src="assets/case1/bottom/bottom1.wav"></audio><div class="small"><a href="assets/case1/bottom/bottom1.wav">open</a></div></div>
+        <div class="row"><div class="label">Bottom 2</div><audio controls preload="none" src="assets/case1/bottom/bottom2.wav"></audio><div class="small"><a href="assets/case1/bottom/bottom2.wav">open</a></div></div>
+        <div class="row"><div class="label">Bottom 3</div><audio controls preload="none" src="assets/case1/bottom/bottom3.wav"></audio><div class="small"><a href="assets/case1/bottom/bottom3.wav">open</a></div></div>
+        <div class="row"><div class="label">Bottom 4</div><audio controls preload="none" src="assets/case1/bottom/bottom4.wav"></audio><div class="small"><a href="assets/case1/bottom/bottom4.wav">open</a></div></div>
+        <div class="row"><div class="label">Bottom 5</div><audio controls preload="none" src="assets/case1/bottom/bottom5.wav"></audio><div class="small"><a href="assets/case1/bottom/bottom5.wav">open</a></div></div>
+      </details>
+    </section>
+
+    <!-- ========================= CASE 2 ========================= -->
+    <section class="case">
+      <h2>Case 2</h2>
+
+      <div class="row">
+        <div class="label">Case sample</div>
+        <audio controls preload="none" src="assets/case2/case.wav"></audio>
+        <div class="small"><a href="assets/case2/case.wav">open</a></div>
+      </div>
+
+      <details open>
+        <summary>Highest-5 influenced samples</summary>
+
+        <div class="row"><div class="label">Top 1</div><audio controls preload="none" src="assets/case2/top/top1.wav"></audio><div class="small"><a href="assets/case2/top/top1.wav">open</a></div></div>
+        <div class="row"><div class="label">Top 2</div><audio controls preload="none" src="assets/case2/top/top2.wav"></audio><div class="small"><a href="assets/case2/top/top2.wav">open</a></div></div>
+        <div class="row"><div class="label">Top 3</div><audio controls preload="none" src="assets/case2/top/top3.wav"></audio><div class="small"><a href="assets/case2/top/top3.wav">open</a></div></div>
+        <div class="row"><div class="label">Top 4</div><audio controls preload="none" src="assets/case2/top/top4.wav"></audio><div class="small"><a href="assets/case2/top/top4.wav">open</a></div></div>
+        <div class="row"><div class="label">Top 5</div><audio controls preload="none" src="assets/case2/top/top5.wav"></audio><div class="small"><a href="assets/case2/top/top5.wav">open</a></div></div>
+      </details>
+
+      <details>
+        <summary>Lowest-5 influenced samples</summary>
+
+        <div class="row"><div class="label">Bottom 1</div><audio controls preload="none" src="assets/case2/bottom/bottom1.wav"></audio><div class="small"><a href="assets/case2/bottom/bottom1.wav">open</a></div></div>
+        <div class="row"><div class="label">Bottom 2</div><audio controls preload="none" src="assets/case2/bottom/bottom2.wav"></audio><div class="small"><a href="assets/case2/bottom/bottom2.wav">open</a></div></div>
+        <div class="row"><div class="label">Bottom 3</div><audio controls preload="none" src="assets/case2/bottom/bottom3.wav"></audio><div class="small"><a href="assets/case2/bottom/bottom3.wav">open</a></div></div>
+        <div class="row"><div class="label">Bottom 4</div><audio controls preload="none" src="assets/case2/bottom/bottom4.wav"></audio><div class="small"><a href="assets/case2/bottom/bottom4.wav">open</a></div></div>
+        <div class="row"><div class="label">Bottom 5</div><audio controls preload="none" src="assets/case2/bottom/bottom5.wav"></audio><div class="small"><a href="assets/case2/bottom/bottom5.wav">open</a></div></div>
+      </details>
+    </section>
+
+    <p class="small">
+      Tip: if your WAVs are large, consider converting to MP3 for the web demo (smaller repo + faster loading).
+    </p>
+  </div>
+</body>
+</html>
